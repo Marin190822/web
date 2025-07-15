@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Agenda Escolar Inteligente</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(135deg, #3f87a6, #2bd363);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+    .login-container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 50px 40px;
+      border-radius: 15px;
+      width: 320px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .login-container:hover {
+      transform: translateY(-5px);
+    }
+    .login-container h2 {
+      margin-bottom: 25px;
+      font-size: 2em;
+      font-weight: 700;
+    }
+    .login-container select, .login-container input {
+      width: 90%;
+      padding: 14px;
+      margin: 12px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      outline: none;
+      transition: box-shadow 0.3s ease;
+    }
+    .login-container input:focus, .login-container select:focus {
+      box-shadow: 0 0 5px #f39c12;
+    }
+    .login-container button {
+      width: 95%;
+      background: linear-gradient(45deg, #f39c12, #e67e22);
+      color: #fff;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .login-container button:hover {
+      background: linear-gradient(45deg, #e67e22, #d35400);
+      transform: scale(1.03);
+    }
+    .login-container a {
+      color: #f39c12;
+      text-decoration: none;
+      font-size: 0.9em;
+      display: inline-block;
+      margin-top: 15px;
+      transition: color 0.2s ease;
+    }
+    .login-container a:hover {
+      text-decoration: underline;
+      color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form action="#" method="post">
+      <select name="rol" required>
+        <option value="">Seleccione su rol</option>
+        <option value="docente">Docente</option>
+        <option value="estudiante">Estudiante</option>
+      </select>
+      <input type="text" name="usuario" placeholder="Usuario" required />
+      <input type="password" name="password" placeholder="Contraseña" required />
+      <button type="submit">Ingresar</button>
+    </form>
+    <p><a href="index.html">← Volver al inicio</a></p>
+  </div>
+</body>
+</html>

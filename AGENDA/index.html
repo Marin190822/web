@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda Escolar Inteligente</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(135deg, #3f87a6, #2bd363);
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
+      padding: 30px;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 75vh;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    main h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    main p {
+      font-size: 1.1em;
+      max-width: 600px;
+    }
+
+    .login-btn {
+      display: inline-block;
+      background: linear-gradient(45deg, #f39c12, #e67e22);
+      color: #fff;
+      border: none;
+      padding: 15px 35px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-top: 30px;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .login-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    "I.E FERMÍN TANGÜIS"
+  </header>
+
+  <main>
+    <h2>Bienvenido</h2>
+    <p>Organiza tus clases, actividades y comunicación escolar de forma eficiente y moderna. Controla tu tiempo y mantente siempre al día.</p>
+    <!-- Enlace a login.html -->
+    <a href="login.html" class="login-btn">Iniciar Sesión</a>
+  </main>
+
+  <footer>
+    &copy; 2025 Agenda Escolar Inteligente. Todos los derechos reservados.
+  </footer>
+</body>
+</html>

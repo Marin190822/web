@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel Docente - Agenda Escolar Inteligente</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(135deg, #3f87a6, #153b50);
+      color: #fff;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: 700;
+    }
+    nav {
+      text-align: center;
+      margin: 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #f39c12;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+    main h2 {
+      margin-bottom: 30px;
+    }
+    .module {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+    .module:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .module a {
+      text-decoration: none;
+      color: #f39c12;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>Panel Docente</header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="login.html">Login</a>
+    <a href="docente.html">Docente</a>
+    <a href="estudiante.html">Estudiante</a>
+    <a href="coordinador.html">Coordinador</a>
+    <a href="apoderado.html">Apoderado</a>
+    <a href="reportes.html">Reportes</a>
+  </nav>
+  <main>
+    <h2>Bienvenido, Docente</h2>
+    <div class="module"><a href="planificar.html">Planificar Clases</a></div>
+    <div class="module"><a href="asistencia.html">Registrar Asistencia</a></div>
+    <div class="module"><a href="tareas.html">Asignar y Controlar Tareas</a></div>
+    <div class="module"><a href="observaciones.html">Comunicar Observaciones</a></div>
+    <div class="module"><a href="reportes.html">Generar Reportes</a></div>
+    <p style="margin-top:30px;"><a href="index.html" style="color:#f39c12;">← Cerrar Sesión</a></p>
+  </main>
+  <footer>&copy; 2025 Agenda Escolar Inteligente. Todos los derechos reservados.</footer>
+</body>
+</html>
+
